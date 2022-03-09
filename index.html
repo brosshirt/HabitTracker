@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Hub</title>
+  </head>
+  <body onload="loadPage()">
+    <div class="header">
+      <div class="third">
+        <form id="item-adder" action="javascript:addBlankHabit()">
+          <input type="submit" id="add-button" value="Add Habit" />
+        </form>
+      </div>
+      <div class="third title"><h1>Good Title</h1></div>
+      <div class="third images">
+        <img src="images/pawn.png" alt="" />
+        <img src="images/booze.png" alt="" />
+        <img src="images/piano.png" alt="" />
+      </div>
+    </div>
+    <div class="grid">
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+    </div>
+    <div class="error" id="error">
+      <span class="closebtn" onclick="this.parentElement.style.display='none';"
+        >&times;</span
+      >
+      Do not place quotation marks (") in habit names
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

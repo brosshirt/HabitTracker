@@ -1,0 +1,122 @@
+:root {
+  --rows: 3;
+}
+body {
+  margin: 0;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: repeat(var(--rows), 350px);
+}
+.new-description {
+  height: 50px;
+  width: 200px;
+}
+/*Square stuff */
+.square {
+  border: 1px solid gray;
+  border-collapse: collapse;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: larger;
+}
+.square {
+  flex-direction: column;
+  justify-content: space-between;
+}
+.square p {
+  margin: 10px;
+}
+.square .foot {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+.square .foot .checkboxes {
+  display: flex;
+  justify-content: flex-start;
+  width: 50%;
+  margin: 10px;
+}
+.square .foot .edit {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 50%;
+}
+.checkboxes img {
+  height: 30px;
+  width: 30px;
+}
+
+/* Header stuff */
+.header {
+  display: flex;
+  background: linear-gradient(180deg, black, #736c6c);
+  color: #d1cbcb;
+  height: 150px;
+}
+.header img {
+  width: 75px;
+}
+.third {
+  width: 33.33%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-style: italic;
+  font-size: 18pt;
+}
+.images {
+  justify-content: space-evenly;
+}
+.checkbox {
+  display: flex;
+}
+.checkbox-item {
+  border: 1px solid black;
+  height: 20px;
+  width: 20px;
+  text-align: center;
+  vertical-align: center;
+  color: #048526;
+}
+.remove-button {
+  cursor: pointer;
+}
+.edit-button {
+  cursor: pointer;
+}
+.checkboxes > img {
+  cursor: pointer;
+}
+.error {
+  position: fixed;
+  color: white;
+  bottom: 0;
+  height: 10%;
+  width: 100%;
+  background-color: #f44336;
+  text-align: center;
+  line-height: 60px;
+  font-size: 30px;
+  display: none;
+}
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 40px;
+  line-height: 65px;
+  cursor: pointer;
+  transition: 0.3s;
+  padding-right: 20px;
+}
+.closebtn:hover {
+  color: black;
+}
